@@ -447,25 +447,29 @@ ul li {
     object-fit: contain;
     border-radius: 10px;
 }
+
 .featured__card {
     position: relative;
 }
+
 .case__study {
     padding: 2rem;
     width: 350px;
     height: 230px;
     border-radius: 10px;
-    box-shadow: 1px 2px 2px 2px silver;
+    box-shadow: 1px 1px 1px 1px silver;
     position: relative;
 }
+
 .case__study {
     position: absolute;
     width: 350px;
     height: 230px;
-    top: 300px;
+    top: 330px;
     left: 30px;
     background: #FFF;
 }
+
 .case__titl {
     font-size: 20px;
     font-weight: 400;
@@ -506,4 +510,352 @@ ul li {
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+
+/* TESTIMONIAL SECTION  */
+.testimonial__container {
+    padding: 3rem 7rem;
+}
+
+.testimonial__header {
+    padding: 2rem 0;
+    font-size: 36px;
+    font-weight: 400;
+    color: #0a0057;
+}
+
+.testimonial__content {
+    margin-left: 8rem;
+    display: flex;
+}
+
+.testimonial__img {
+    width: 160px;
+    height: 160px;
+}
+
+.testimonial__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.testimonial__para {
+    margin-left: 2rem;
+    width: 800px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #0a0057;
+    line-height: 28px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.testimonial--para--content {
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.testimonial--para--name {
+    margin-left: 2rem;
+    font-size: 16px;
+    font-weight: 400;
+    color: #0a0057;
+    line-height: 26px;
+}
+
+.testimonial__data {
+    margin-left: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #546677;
+    font-family: 'Source Code Pro', monospace;
+}
+
+
+/* SERVIVCES  SECTION  */
+.partner__container {
+    padding: 3rem 7rem;
+    background: #F2F6F9;
+}
+
+.partner__content {
+    padding: 3rem 0;
+}
+
+.parner--card--content {
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.partner__card {
+    width: 400px;
+    height: 420px;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.sparner--card--img {
+    width: 200px;
+    height: 200px;
+}
+
+.parner--card--img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.employe__nam {
+    margin: 1rem 0;
+    font-size: 18px;
+    font-weight: 400;
+    color: #0a0057;
+}
+
+.employe__para {
+    font-size: 16px;
+    font-weight: 400;
+    color: #676579;
+    line-height: 28px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.partner__dash {
+    width: 1px;
+    height: 300px;
+    background: silver;
+}
+
+/* PARTNERSHIP  SECTION  */
+.partnership__container {
+    padding: 5rem 7rem;
+}
+
+.partnership__header {
+    font-size: 36px;
+    font-weight: 400;
+    color: #0065ad;
+}
+
+.partnership__content {
+    margin-left: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+.con--one--img {
+    width: 280px;
+    height: 200px;
+}
+
+.con--one--img img {
+    width: 100%;
+    height: 100%;
+}
+
+.partnership__dash {
+    margin: 0 2rem;
+    width: 1px;
+    height: 350px;
+    background: silver;
+
+}
+
+.partnership--col--two {
+    padding: 1rem 0;
+}
+
+.col--two--head {
+    font-size: 30px;
+    font-weight: 400;
+    color: #0a0057;
+}
+
+.partnership__para {
+    padding: 2rem 0;
+    font-size: 18px;
+    font-weight: 400;
+    color: #546677;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.partnership__info {
+    display: flex;
+    align-items: center;
+}
+
+.info__name {
+    font-size: 12px;
+    font-weight: 400;
+    color: #0065ad;
+}
+
+.info__arrow {
+    margin: 2px 2px 0 0;
+    width: 20px;
+    height: 20px;
+}
+
+.info__arrow img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* CONTACT SECTION   */
+
+.contact__container {
+    padding: 3rem 7rem;
+    background: #F2F6F9;
+}
+
+.contact__form {
+    padding: 2rem 0;
+}
+
+.input__form {
+    margin: 1rem;
+    padding: 1rem;
+    width: 525px;
+    height: 50px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid silver;
+    font-size: 12px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.note {
+    margin-left: 1rem;
+    font-size: 12px;
+    font-weight: 400;
+    color: #0065ad;
+}
+.input__select {
+    margin: 1rem 0;
+    margin-left: 1rem;
+    padding: 1rem;
+    width: 1080px;
+    height: 60px;
+    border-radius: 10px;
+    border: 1px solid silver;
+    outline: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: #546677;
+    font-family: 'Source Code Pro', monospace;
+}
+.input__select option {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Source Code Pro', monospace;
+}
+.textarea {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    padding: 1rem;
+    width: 1070px;
+    height: 250px;
+    border: 1px solid silver;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.button__group {
+    padding: 0 2rem;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.button__group::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url(./image/Vector.png);
+    background-position: center;
+    background-size: contain;
+    z-index: 1;
+    /* opacity: 0.9; */
+}
+
+.form__btn {
+    padding-top: 15px;
+    width: 520px;
+    height: 55px;
+    border: 2px solid #0065AD;
+    border-radius: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.form__btn:hover {
+    background: #FFF;
+}
+.form__btn i{
+    color: #0065AD;
+}
+.form__btn a {
+    color: #0065AD;
+}
+
+/* FOOTER SECTION  */
+
+.footer__content {
+    display: flex;
+    justify-content: center;
+}
+.footer__box {
+    margin: 5rem 4rem;
+}
+.footer--box--title {
+    font-size: 20px;
+    font-weight: 400;
+    color: #0a0057;
+}
+.footer--box--text {
+    margin: 1rem 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: #546677;
+    font-family: 'Source Code Pro', monospace;
+    cursor: pointer;
+}
+.footer__copyright {
+    padding: 3rem 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.copyright {
+    font-size: 14px;
+    font-weight: 500;
+    color: #546677;
+    font-family: 'Source Code Pro', monospace;
+    cursor: pointer;
+}
+.privacy {
+    font-size: 14px;
+    font-weight: 500;
+    color: #546677;
+    font-family: 'Source Code Pro', monospace;
+    cursor: pointer;
 }
