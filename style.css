@@ -75,17 +75,25 @@ ul li {
     color: #44c7f4;
     transition: 0.3s;
 }
-
-.item__arrow i {
-    font-size: 25px;
-    color: #FFF;
-    cursor: pointer;
+.arrow {
+    transition: all 0.5s ease-in-out;
 }
-
-.item__arrow:hover i {
+.arrow:hover {
+    transform: translateX(-20px);
+}
+.arrow a{
     color: #44c7f4;
 }
-
+.item__arrow {
+    margin-left: 5px;
+    width: 25px;
+    height: 25px;
+}
+.item__arrow img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
 .hero--text--btn {
     margin: 0 7rem;
     width: 650px;
@@ -108,6 +116,7 @@ ul li {
 }
 
 .hero--btn--group {
+    margin-top: 2rem;
     width: 450px;
     display: flex;
     justify-content: space-between;
@@ -116,7 +125,7 @@ ul li {
 .hero__btn {
     font-size: 12px;
     font-weight: 400;
-    border: 2px solid #0065AD;
+    border: 2px solid #44C7F4;
     border-radius: 50px;
     cursor: pointer;
 }
@@ -132,7 +141,8 @@ ul li {
     align-items: center;
     justify-content: center;
     background: #0065AD;
-    transition: 0.5s ease-in-out;
+    border: none;
+    transition: all 0.8s ease-in-out;
 }
 
 .btn__two {
@@ -141,17 +151,22 @@ ul li {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: 0.5s;
+    transition: all 0.8s ease-in-out;
 }
 
 .btn__one:hover {
     background: transparent;
     color: #0065AD;
+    border: 2px solid #44C7F4;
 
+}
+.btn__two a {
+    color: #44C7F4;
 }
 
 .btn__two:hover {
     background: #0065AD;
+    border: none;
 }
 
 /* DATA SECTION  */
@@ -177,15 +192,29 @@ ul li {
 }
 
 .data__arrow {
-    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    
 }
-
+.data--arrow--img {
+    margin-left: 5px;
+    width: 20px;
+    height: 20px;
+}
+.data--arrow--img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
 .data__arrow a {
     font-size: 12px;
     font-weight: 400;
-    color: #0a0057;
+    color: #0065AD;
 }
-
+.data--arrow--img {
+    display: flex;
+}
 .data--card--content {
     padding: 4rem 0;
     display: flex;
@@ -201,11 +230,14 @@ ul li {
 }
 
 .card__svg {
-    padding: 1rem 0;
-    width: 330px;
-    height: 200px;
+    margin: 1.3rem;
+    width: 300px;
+    height: 220px;
+    transition: all 0.5s ease-in-out;
 }
-
+.card__svg:hover{
+    transform: translateY(-15px);
+}
 .card__svg img {
     width: 100%;
     height: 100%;
@@ -255,6 +287,10 @@ ul li {
 .services__img {
     width: 150px;
     height: 150px;
+    transition: all 0.8s ease-in-out;
+}
+.services__img:hover{
+    transform: translateY(-15px);
 }
 
 .services__img img {
@@ -280,25 +316,28 @@ ul li {
 }
 
 /* ABOUT US SECTION   */
-.aboutus__container {
+.aboutu__container {
+    padding: 0 6rem;
     background: #F2F6F9;
+    width: 100%;
+    height: 100vh;
+    border: 2px solid red;
+    position: relative;
+
 }
 
 .about__content {
-    padding: 0 6rem;
+    /* padding: 0 6rem; */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-    height: 10%;
-    position: relative;
 }
 
-.about__content::before {
+.aboutu__container::before {
     content: "";
     position: absolute;
     width: 100%;
-    height: 30%;
+    height: 20%;
     top: 70%;
     left: 0;
     background: url(./image/Vector.png);
@@ -350,9 +389,6 @@ ul li {
     display: flex;
     justify-content: space-between;
 }
-
-.number--col--one {}
-
 .number {
     font-size: 36px;
     font-weight: 400;
@@ -377,7 +413,7 @@ ul li {
     border-radius: 50px;
     border: 2px solid #0065ad;
     font-family: 'Krona One', sans-serif;
-    transition: 0.4s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .about__btn:hover a {
@@ -439,13 +475,18 @@ ul li {
 .featured--card--img {
     width: 540px;
     height: 390px;
+    overflow: hidden;
+    border-radius: 10px;
+   
 }
-
+.featured--card--img:hover img{
+    transform: scale(1.1);
+}
 .featured--card--img img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
-    border-radius: 10px;
+    object-fit: cover;
+    transition: 1s;
 }
 
 .featured__card {
@@ -502,8 +543,9 @@ ul li {
 }
 
 .viwe__arrow {
-    width: 30px;
-    height: 30px;
+    margin-left: 5px;
+    width: 25px;
+    height: 25px;
 }
 
 .viwe__arrow img {
@@ -701,8 +743,8 @@ ul li {
 
 .info__arrow {
     margin: 2px 2px 0 0;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
 }
 
 .info__arrow img {
@@ -716,6 +758,7 @@ ul li {
 .contact__container {
     padding: 3rem 7rem;
     background: #F2F6F9;
+    position: relative;
 }
 
 .contact__form {
@@ -780,25 +823,26 @@ ul li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
+    border: 2px solid red;
 }
 
 .button__group::before {
     content: "";
     position: absolute;
     width: 100%;
-    height: 100%;
-    top: 0;
+    height: 10%;
+    bottom: 100px;
     left: 0;
     background: url(./image/Vector.png);
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     z-index: 1;
-    /* opacity: 0.9; */
+    opacity: 0.5;
+    cursor: pointer;
 }
 
 .form__btn {
-    padding-top: 15px;
+    padding-top: 15px; 
     width: 520px;
     height: 55px;
     border: 2px solid #0065AD;
@@ -807,13 +851,17 @@ ul li {
     cursor: pointer;
 }
 
-.form__btn:hover {
-    background: #FFF;
+.form__btn:hover a{
+    background: #0065AD;
+    
 }
 .form__btn i{
+    margin-right: 5px;
     color: #0065AD;
 }
 .form__btn a {
+    font-size: 12px;
+    font-weight: 400;
     color: #0065AD;
 }
 
